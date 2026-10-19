@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deriv Digit Analyzer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #101827;
+      color: white;
+      padding: 25px;
+      max-width: 700px;
+      margin: auto;
+    }
+    .panel {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+    button {
+      background: #16a34a;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 7px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Deriv Digit Analyzer</h1>
+  <p>Your personal Over/Under analysis project.</p>
+
+  <div class="panel">
+    <h2>Project status</h2>
+    <p id="status">Analyzer loaded successfully.</p>
+    <button onclick="testTool()">Test analyzer</button>
+  </div>
+
+  <div class="panel">
+    <h2>Our next upgrades</h2>
+    <p>1. Connect to live Deriv tick data.</p>
+    <p>2. Analyze last-digit frequencies.</p>
+    <p>3. Calculate Over/Under probabilities.</p>
+    <p>4. Analyze Matches/Differs statistics.</p>
+  </div>
+
+  <script>
+    function testTool() {
+      document.getElementById("status").textContent =
+        "Success! Your analyzer is working.";
+    }
+  </script>
+</body>
+</html>
